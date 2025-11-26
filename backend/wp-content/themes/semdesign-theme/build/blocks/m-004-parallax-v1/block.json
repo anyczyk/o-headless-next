@@ -1,0 +1,25 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/m-004-parallax-v1",
+  "title": "[m-004] Parallax v1",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Simple Parallax",
+  "attributes": {
+    "size": {
+      "type": "string",
+      "default": "large"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "position": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss"
+}

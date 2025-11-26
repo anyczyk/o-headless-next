@@ -1,0 +1,58 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/m-003-portfolio-v1",
+  "title": "[m-003] Portfolio v1",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Portfolio",
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "h3"
+    },
+    "portfolio": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "imageUrl": {
+            "type": "string",
+            "default": ""
+          },
+          "imageAlt": {
+            "type": "string",
+            "default": ""
+          },
+          "imageSrcset": {
+            "type": "string",
+            "default": ""
+          },
+          "title": {
+            "type": "string",
+            "default": ""
+          },
+          "description": {
+            "type": "string",
+            "deafult": ""
+          },
+          "urlSite": {
+            "type": "string",
+            "default": ""
+          },
+          "urlGooglePlay": {
+            "type": "string",
+            "default": ""
+          },
+          "urlYoutube": {
+            "type": "string",
+            "default": ""
+          }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss"
+}

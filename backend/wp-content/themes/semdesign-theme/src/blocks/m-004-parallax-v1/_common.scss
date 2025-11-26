@@ -1,0 +1,33 @@
+.ho-module-m-004-parallax-v1 {
+
+  &--large {
+    .ho-module-m-004-parallax-v1__wrap-image {
+      height: calc(400px + 10vw);
+    }
+  }
+
+  &--medium {
+    .ho-module-m-004-parallax-v1__wrap-image {
+      height: calc(250px + 10vw);
+    }
+  }
+
+  &--small {
+    .ho-module-m-004-parallax-v1__wrap-image {
+      height: calc(60px + 10vw);
+    }
+  }
+
+  &__wrap-image {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-black);
+    background-size: cover;
+    color: var(--color-white);
+
+    @media (min-width: 1200px) {
+      background-attachment: fixed;
+      height: calc(100px + 10vw);
+    }
+  }
+}

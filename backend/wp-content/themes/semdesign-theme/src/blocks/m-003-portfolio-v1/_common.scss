@@ -1,0 +1,76 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.ho-module-m-003-portfolio-v1 {
+    background-color: var(--color-secondary-lighter);
+    color: var(--color-white);
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, li {
+        color: var(--color-white);
+    }
+
+    a {
+        color: var(--color-amber);
+        text-decoration: none;
+    }
+
+    &__main-list-item {
+        overflow: hidden;
+        border-radius: 12px;
+        background-color: var(--color-white-opacity-10);
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            box-shadow: inset 0 0 10px var(--color-black-opacity-60);
+            pointer-events: none;
+        }
+    }
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+
+        //@include media-breakpoint-up(sm) {
+        //    min-height: 64px;
+        //    min-width: 13.89rem;
+        //}
+        //
+        //@include media-breakpoint-down(sm) {
+        //    max-width: 62px;
+        //    max-height: 62px;
+        //    margin-top: 1rem;
+        //    margin-left: 1rem;
+        //}
+
+        a {
+            &:focus-visible::after {
+                content: "";
+                display: block;
+                position: absolute;
+                inset: 0;
+                outline: unset !important;
+                border: 4px dotted var(--color-white)!important;
+            }
+        }
+
+        img {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            height: 100%;
+
+            @include media-breakpoint-down(sm) {
+                border-radius: $border-radius;
+            }
+        }
+    }
+
+    &__main-list {
+
+    }
+}

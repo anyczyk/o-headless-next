@@ -1,0 +1,142 @@
+{
+  "apiVersion": 2,
+  "supports": {
+    "className": true
+  },
+  "name": "semdesign/m-006-slider-v2",
+  "title": "[m-006] Slider v2",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Slider block with Swiper.js",
+  "attributes": {
+    "slides": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "imageId": {
+            "type": "number",
+            "default": 0
+          },
+          "imageUrl": {
+            "type": "string",
+            "default": ""
+          },
+          "imagePosition": {
+            "type": "string",
+            "default": "center"
+          },
+          "overLayGradient": {
+            "type": "boolean",
+            "default": true
+          },
+          "overLayFull": {
+            "type": "boolean",
+            "default": false
+          },
+          "horizontalAlignment": {
+            "type": "string",
+            "default": "start"
+          },
+          "verticalAlignment": {
+            "type": "string",
+            "default": "center"
+          },
+          "title": {
+            "type": "string",
+            "default": ""
+          },
+          "subTitle": {
+            "type": "string",
+            "default": ""
+          },
+          "description": {
+            "type": "string",
+            "default": ""
+          },
+          "caption": {
+            "type": "string",
+            "default": ""
+          },
+          "buttonLabel": {
+            "type": "string",
+            "default": ""
+          },
+          "buttonUrl": {
+            "type": "string",
+            "default": ""
+          },
+          "openInNewTab": {
+            "type": "boolean",
+            "default": false
+          },
+          "textColor": {
+            "type": "string",
+            "default": "ho-text-color-default"
+          },
+          "bgColor": {
+            "type": "string",
+            "default": "ho-bg-color-default"
+          },
+          "customClasses": {
+            "type": "string",
+            "default": ""
+          }
+        }
+      }
+    },
+    "customAttributes": {
+      "type": "string",
+      "default": ""
+    },
+    "size": {
+      "type": "string",
+      "default": "large"
+    },
+    "topOverlap": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "delay": {
+      "type": "number",
+      "default": 5000
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoHeight": {
+      "type": "boolean",
+      "default": true
+    },
+    "effectFade": {
+      "type": "boolean",
+      "default": false
+    },
+    "dots": {
+      "type": "boolean",
+      "default": true
+    },
+    "arrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "firstTagH1": {
+      "type": "boolean",
+      "default": false
+    },
+    "tagName": {
+      "type": "string",
+      "default": "h3"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss",
+  "render": "file:./render.php"
+}

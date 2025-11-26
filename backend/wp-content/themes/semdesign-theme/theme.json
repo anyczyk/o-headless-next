@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#e3e8e3",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#001c04",
+          "name": "Secondary"
+        },
+        {
+          "slug": "secondary-lighter",
+          "color": "#013f09",
+          "name": "Secondary lighter"
+        },
+        {
+          "slug": "amber",
+          "color": "#ff610b",
+          "name": "Amber"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        }
+      ]
+    }
+  }
+}

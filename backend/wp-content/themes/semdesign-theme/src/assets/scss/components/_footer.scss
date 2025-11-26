@@ -1,0 +1,33 @@
+.ho-footer {
+  background-color: var(--color-secondary);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: var(--color-white);
+
+  a {
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  .current_page_item {
+    a {
+      color: var(--color-amber);
+    }
+  }
+
+  &__info > p {
+    margin-bottom: 0;
+  }
+
+  .ho-footer-main-menu {
+    a {
+      color: var(--color-white);
+    }
+  }
+
+  & &__title {
+    &::first-letter {
+      color: var(--color-amber);
+    }
+  }
+}

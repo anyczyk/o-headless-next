@@ -1,0 +1,70 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/m-005-tiles-with-slider-modals-v1",
+  "title": "[m-005] Tiles with slider modals v1",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Tiles (image, button) with modals (slider, image, title, sub-title, description)",
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "h3"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "ho-text-color-default"
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "ho-bg-color-default"
+    },
+    "customAttributes": {
+      "type": "string",
+      "default": ""
+    },
+    "tilesModals": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "imageUrl": {
+            "type": "string",
+            "default": ""
+          },
+          "imageAlt": {
+            "type": "string",
+            "default": ""
+          },
+          "imageSrcset": {
+            "type": "string",
+            "default": ""
+          },
+          "tileTitle": {
+            "type": "string",
+            "default": ""
+          },
+          "tileCustomAttributes": {
+            "type": "string",
+            "default": ""
+          },
+          "modalTitle": {
+            "type": "string",
+            "default": ""
+          },
+          "modalSubTitle": {
+            "type": "string",
+            "default": ""
+          },
+          "modalDescription": {
+            "type": "string",
+            "deafult": ""
+          }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss"
+}

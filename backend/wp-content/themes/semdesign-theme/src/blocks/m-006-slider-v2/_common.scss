@@ -1,0 +1,318 @@
+@use "../../assets/scss/variables" as vars;
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+$height-bar-top: vars.$height-bar-top;
+$height-bar-bottom: vars.$height-bar-bottom;
+$height-bar-bottom-mobile: vars.$height-bar-bottom-mobile;
+
+// Common styles for front and backend
+.ho-module-m-006-slider-v2 {
+  overflow: hidden;
+  position: relative;
+
+  &.swiper-module {
+    .swiper-button-next,
+    .swiper-button-prev {
+      border: none;
+      display: flex;
+      transition: opacity 250ms ease-in-out;
+      margin: 0;
+      background: var(--color-white-opacity-40);
+      translate: 0 -50%;
+      opacity: 1;
+      width: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      &::before,
+      &::after {
+        font-size: 32px;
+      }
+    }
+
+    @include media-breakpoint-up("lg") {
+      .ho-module-m-006-slider-v2__text-show {
+        .swiper-button-next,
+        .swiper-button-prev {
+          top: 50%;
+          translate: 0 -50%;
+          margin: 0;
+          bottom: auto;
+          height: auto;
+          width: auto;
+          opacity: 1;
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        opacity: 0;
+        height: calc(100% - 3rem - 3rem);
+        width: 50%;
+        top: 3rem;
+        bottom: 3rem;
+        background: transparent;
+        translate: none;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .swiper-button-prev  {
+      justify-content: start;
+      left: 0;
+      //left: 1rem; //calc(50% - 660px - 40px);
+    }
+
+    .swiper-button-next {
+      justify-content: end;
+      right: 0;
+      //right: 1rem; //calc(50% - 660px - 40px);
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .swiper-slide {
+      //height: auto;
+      height: calc(100vh - #{$height-bar-bottom-mobile});
+
+      @include media-breakpoint-up("md") {
+        height: calc(100vh - #{$height-bar-bottom});
+      }
+    }
+  }
+
+  &__wrap-image {
+    //flex: 0.7;
+
+    img {
+      max-height: calc(100vh - #{$height-bar-bottom-mobile});
+
+      @include media-breakpoint-up("lg") {
+        max-height: calc(100vh - #{$height-bar-bottom} - 3rem - 3rem);
+      }
+      width: 100%;
+    }
+  }
+
+  &__wrap-text {
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 50%;
+    background: var(--color-white);
+    //backdrop-filter: blur(2px);
+    transition: translate 300ms ease-in-out, opacity 600ms ease-in-out;
+    translate: 0 100vh;
+
+    &--show {
+      opacity: 1;
+      translate: 0 0;
+    }
+    > div {
+      max-height: calc(100vh - #{$height-bar-bottom-mobile});
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: var(--color-scrollbar-track);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-scrollbar-thumb);
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: var(--color-scrollbar-thumb-hover);
+      }
+
+      @include media-breakpoint-up("lg") {
+        // max-height: calc(100vh - #{$height-bar-bottom} - 3rem - 3rem);
+        max-height: none;
+        position: absolute;
+        inset: 0;
+      }
+    }
+
+    @include media-breakpoint-up("lg") {
+      position: relative;
+      min-width: 0;
+      max-width: 0;
+      translate: 0 0;
+      max-height: none;
+      top: 0;
+      transition: min-width 300ms ease-in-out, max-width 300ms ease-in-out, opacity 600ms ease-in-out;
+
+      &--show {
+        max-width: 516px;
+        min-width: 516px;
+      }
+    }
+  }
+
+
+  // with auto height START
+  &.ho-module-m-006-slider-v2--auto-height.swiper-module {
+    .swiper-slide {
+      height: auto;
+
+      @include media-breakpoint-up("md") {
+        height: auto;
+      }
+    }
+
+    //.ho-module-m-006-slider-v2__wrap-image {
+    //  img {
+    //    max-height: none;
+    //
+    //    @include media-breakpoint-up("lg") {
+    //      max-height: none;
+    //    }
+    //    width: 100%;
+    //  }
+    //}
+    //
+    //.ho-module-m-006-slider-v2__wrap-text {
+    //  > div {
+    //    max-height: none;
+    //  }
+    //}
+  }
+  // with auto height END
+
+  &__toggle-text {
+    border: none;
+    background: var(--color-white-opacity-70);
+    backdrop-filter: blur(2px);
+    font-size: 24px;
+    position: absolute;
+    right: .5rem;
+    bottom: auto;
+    top: .5rem;
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+
+    @include media-breakpoint-up("lg") {
+      bottom: .5rem;
+      top: auto;
+    }
+  }
+
+  //.swiper-wrapper {
+  //  align-items: center;
+  //}
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--color-text-main);
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+  }
+
+  .swiper-button-disabled {
+    display: none !important;
+  }
+
+  &.ho-module-m-006-slider-v2--swiper-active {
+    .swiper-button-next,
+    .swiper-button-prev {
+      visibility: visible;
+    }
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+
+  .swiper-pagination {
+    left: 3rem !important;
+    right: 3rem !important;
+    width: auto !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-bullet-active) !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: var(--color-bullets);
+    opacity: .8;
+  }
+
+  //&--large {
+  //  .swiper-slide {
+  //    min-height: calc(400px + 10vw);
+  //  }
+  //}
+  //
+  //&--medium {
+  //  .swiper-slide {
+  //    min-height: calc(250px + 10vw);
+  //  }
+  //}
+  //
+  //&--small {
+  //  .swiper-slide {
+  //    min-height: calc(60px + 10vw);
+  //  }
+  //}
+  //
+  //&--full {
+  //  .swiper-slide {
+  //    min-height: calc(100vh - 60px); // depends of height header
+  //  }
+  //}
+
+  &--aspect-ratio-3-2 {
+    .swiper-slide {
+      aspect-ratio: 3 / 2;
+    }
+
+    .swiper-initialized {
+      position: relative;
+
+      .swiper-button-prev {
+        left: 0;
+      }
+
+      .swiper-button-next {
+        right: 0;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        opacity: 0;
+        top: 0;
+        height: 100%;
+        margin: 0;
+        width: 50%;
+      }
+    }
+  }
+
+  .swiper-slide {
+    color: var(--color-text-main);
+    background-color: var(--color-white);
+  }
+}

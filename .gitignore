@@ -1,0 +1,14 @@
+# WordPress - backend
+/backend/*
+!/backend/wp-content/
+!/backend/wp-content/**
+/backend/wp-content/uploads/
+/backend/wp-content/themes/twentytwentyfive/
+**/node_modules/
+
+# Systemy operacyjne
+.DS_Store
+Thumbs.db
+
+# Logi
+*.log

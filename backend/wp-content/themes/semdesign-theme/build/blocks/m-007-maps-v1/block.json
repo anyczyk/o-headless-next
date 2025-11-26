@@ -1,0 +1,85 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/m-007-maps-v1",
+  "title": "[m-007] Maps v1",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Google Mpas or Leaflet - OpenStreetMap ",
+  "attributes": {
+    "image": {
+      "type": "object",
+      "default": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "imageLink": {
+      "type": "string",
+      "default": ""
+    },
+    "size": {
+      "type": "string",
+      "default": "medium"
+    },
+    "zoom": {
+      "type": "string",
+      "default": "2"
+    },
+    "coordinatesCenter": {
+      "type": "string",
+      "default": "0,0"
+    },
+    "topOverlap": {
+      "type": "boolean",
+      "default": "false"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "ho-text-color-default"
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "ho-bg-color-default"
+    },
+    "customAttributes": {
+      "type": "string",
+      "default": ""
+    },
+    "pins": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "coordinatesPin": {
+            "type": "string",
+            "default": ""
+          },
+          "pinCustomAttributes": {
+            "type": "string",
+            "default": ""
+          },
+          "pinLink": {
+            "type": "boolean",
+            "default": "false"
+          },
+          "link": {
+            "type": "string",
+            "default": ""
+          },
+          "pinTitle": {
+            "type": "string",
+            "default": ""
+          },
+          "pinDescription": {
+            "type": "string",
+            "default": ""
+          }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss"
+}

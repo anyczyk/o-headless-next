@@ -1,0 +1,31 @@
+@import "common";
+.ho-module-d-003-tile-links-dynamic-v1 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.components-panel__body {
+  hr {
+    border-bottom: 1px solid #e0e0e0;
+    opacity: 1;
+  }
+
+  .ho-editor-image {
+    position: relative;
+    min-height: 36px;
+
+    .components-button {
+      position: absolute;
+      top: 0;
+      background-color: rgba(255,255,255,.8);
+
+      &:nth-child(1) {
+        left: 0;
+      }
+
+      &:nth-child(2) {
+        right: 0;
+      }
+    }
+  }
+}

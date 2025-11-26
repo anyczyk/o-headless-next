@@ -1,0 +1,17 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/lista",
+  "title": "Lista",
+  "category": "common",
+  "icon": "list-view",
+  "description": "Blok z funkcjonalnością repeatera dla tworzenia listy z tytułem i subskrypcją.",
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss"
+}

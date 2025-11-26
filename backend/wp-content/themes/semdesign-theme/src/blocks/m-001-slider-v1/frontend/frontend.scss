@@ -1,0 +1,8 @@
+@import "../common";
+
+.ho-module-m-001-slider-v1--top-overlap {
+  margin-top: -60px;
+  &.wp-block-semdesign-m-001-slider-v1 .swiper-slide {
+    padding-top: calc(3rem + 60px);
+  }
+}

@@ -1,0 +1,69 @@
+.ho-module-m-007-maps-v1 {
+  &__placeholder,
+  &__map-init {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+
+    &.ho-module-m-007-maps-v1__map-init--small {
+      height: 250px;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--medium {
+      height: 360px;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--large {
+      height: 500px;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--half-full {
+      height: 50vh;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--full {
+      height: 100vh;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--aspect-ratio-3-2 {
+      height: auto;
+      aspect-ratio: 3 / 2;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--aspect-ratio-2-1 {
+      height: auto;
+      aspect-ratio: 2 / 1;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--aspect-ratio-16-9 {
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--aspect-ratio-16-10 {
+      height: auto;
+      aspect-ratio: 16 / 10;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--aspect-ratio-panorama {
+      height: auto;
+      aspect-ratio: 21 / 9;
+    }
+
+    &.ho-module-m-007-maps-v1__map-init--aspect-ratio-cinema {
+      height: auto;
+      aspect-ratio: 2.39 / 1;
+    }
+  }
+  & &__map-init {
+    img {
+      max-width: none;
+    }
+  }
+  & &__map-cloud {
+    a {
+      text-decoration: none;
+    }
+  }
+}

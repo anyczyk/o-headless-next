@@ -1,0 +1,54 @@
+@import "common";
+.ho-module-m-003-portfolio-v1 {
+  &__move-item {
+    cursor: grab;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: block;
+    i {
+      font-size: 32px;
+    }
+  }
+
+  &__image-settings {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__image {
+    min-height: 64px;
+    min-width: 13.89rem;
+
+    .components-base-control__field {
+      margin-bottom: 0;
+      input {
+        width: 100%;
+      }
+    }
+
+    .components-button {
+      position: absolute;
+      top: 0;
+      background-color: rgba(255,255,255,.8);
+
+      &:nth-child(1) {
+        left: 0;
+      }
+
+      &:nth-child(2) {
+        right: 0;
+      }
+    }
+
+  }
+}
+
+.components-panel__body {
+  hr {
+    border-bottom: 1px solid #e0e0e0;
+    opacity: 1;
+  }
+}

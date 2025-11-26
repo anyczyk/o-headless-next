@@ -1,0 +1,42 @@
+{
+  "name": "semdesign-theme",
+  "version": "1.0.0",
+  "description": "A basic WordPress theme with custom Gutenberg blocks.",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "build-main": "webpack --config webpack.main.config.js",
+    "start-main": "webpack --config webpack.main.config.js --watch"
+  },
+  "author": "Alex",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@wordpress/scripts": "^25.0.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "glob": "^11.0.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "path-browserify": "^1.0.1",
+    "sass": "^1.80.7",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.20.6",
+    "@wordpress/block-editor": "^14.3.2",
+    "@wordpress/blocks": "^13.8.2",
+    "@wordpress/components": "28.8.2",
+    "@wordpress/element": "^6.8.1",
+    "@wordpress/i18n": "^5.8.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.3.1",
+    "swiper": "^11.1.14"
+  }
+}

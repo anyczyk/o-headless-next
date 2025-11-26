@@ -1,0 +1,34 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/d-001-slider-dynamic-v1",
+  "title": "[d-001] Slider dynamic v1",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Blok dynamiczny slidera wykorzystujący bibliotekę Swiper.js dla Reacta.",
+  "attributes": {
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "selectedCPT": {
+      "type": "string",
+      "default": "post"
+    },
+    "postsLimit": {
+      "type": "number",
+      "default": null
+    },
+    "ids": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "h3"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss",
+  "render": "file:./render.php"
+}

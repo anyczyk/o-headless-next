@@ -1,0 +1,21 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/m-002-header-v1",
+  "title": "[m-002] Header v1",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Simple header",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "h2"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss"
+}

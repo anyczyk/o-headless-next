@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/backend/wp-content/plugins/woocommerce-payments/src" isTestSource="false" packagePrefix="WCPay" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/wp-content/plugins/woocommerce/packages/action-scheduler/classes" isTestSource="false" packagePrefix="Action_Scheduler" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/wp-content/plugins/wp-graphql/deprecated" isTestSource="false" packagePrefix="WPGraphQL" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/wp-content/plugins/wp-graphql/phpcs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/wp-content/plugins/wp-graphql/src" isTestSource="false" packagePrefix="WPGraphQL" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/wp-includes/SimplePie/src" isTestSource="false" packagePrefix="SimplePie" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

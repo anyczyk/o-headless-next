@@ -1,0 +1,15 @@
+@import "../common";
+
+.ho-module-m-003-portfolio-v1__image {
+  @include media-breakpoint-up(sm) {
+    min-height: 64px;
+    min-width: 13.89rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    max-width: 62px;
+    max-height: 62px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiVersion": 2,
+  "name": "semdesign/d-003-tile-links-dynamic-v1",
+  "title": "[d-003] Tile links dynamic v1",
+  "category": "semdesign",
+  "icon": "megaphone",
+  "description": "Dynamic Tile links block",
+  "attributes": {
+    "selectedCPT": {
+      "type": "string",
+      "default": "post"
+    },
+    "postsLimit": {
+      "type": "number",
+      "default": null
+    },
+    "ids": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "h3"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "ho-text-color-default"
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "ho-bg-color-default"
+    },
+    "animateTiles": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss",
+  "style": "file:./frontend/frontend.scss",
+  "render": "file:./render.php"
+}
