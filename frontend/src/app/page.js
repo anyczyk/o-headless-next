@@ -1,3 +1,4 @@
+// frontend/src/app/page.js
 import SemdesignM001SliderV1 from "@/wp-components/blocks/SemdesignM001SliderV1";
 import { gql } from "@apollo/client";
 import client from "@/utils/apolloClient";

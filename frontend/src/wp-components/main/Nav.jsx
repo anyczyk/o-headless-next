@@ -1,10 +1,11 @@
+// frontend/src/wp-components/main/Nav.jsx
 "use client";
 import { gql, useQuery } from "@apollo/client";
 import client from "@/utils/apolloClient";
 
 const GET_MENU = gql`
-  query GetMenu($id: ID!) {
-    menu(id: $id, idType: DATABASE_ID) {
+  query GetMenu {
+    menu(id: "Main", idType: NAME) {
       name
       menuItems {
         nodes {
@@ -20,7 +21,6 @@ const GET_MENU = gql`
 export default function Nav() {
     const { data, loading, error } = useQuery(GET_MENU, {
         client,
-        variables: { id: "21" }, // ✅ TWOJE ID MENU
     });
 
     if (loading) return <p>Ładowanie menu...</p>;

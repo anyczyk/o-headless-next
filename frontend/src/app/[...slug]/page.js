@@ -1,4 +1,4 @@
-// app/[...slug]/page.js
+// frontend/src/app/[...slug]/page.js
 "use server";
 
 import { gql } from "@apollo/client";
