@@ -5,6 +5,7 @@
 /backend/wp-content/uploads/
 /backend/wp-content/themes/twentytwentyfive/
 **/node_modules/
+/.idea/
 
 # Systemy operacyjne
 .DS_Store
