@@ -37,6 +37,8 @@ export default async function Page({ params }) {
               dots
               autoHeight
               tagName
+              size
+              topOverlap
             }
           }
           ... on CoreParagraph { attributes { content } }
@@ -52,13 +54,13 @@ export default async function Page({ params }) {
             variables: { slug: slugPath },
         });
 
-        if (!data?.page) return <p>Strona nie znaleziona</p>;
+        if (!data?.page) return <div className="flex items-center text-lg font-semibold min-h-[calc(100vh-2.5rem)] w-full justify-center"><p>404 - Page not found</p></div>;
 
         const blocks = data.page.editorBlocks || [];
 
         return (
-            <div>
-                <h1>{data.page.title}</h1>
+            <>
+                <span className="hidden">Title: {data.page.title}</span>
                 {blocks.map((block, idx) => {
                     switch (block.__typename) {
                         case "SemdesignM001SliderV1":
@@ -73,7 +75,7 @@ export default async function Page({ params }) {
                             return null;
                     }
                 })}
-            </div>
+            </>
         );
     } catch (err) {
         console.error("GraphQL fetch error:", err);

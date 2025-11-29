@@ -10,19 +10,20 @@
   },
   "dependencies": {
     "@apollo/client": "^3.9.11",
-    "graphql": "^16.12.0",
-    "swiper": "^11.1.14",
     "file-saver": "^2.0.5",
+    "graphql": "^16.12.0",
     "jszip": "^3.10.1",
     "next": "16.0.4",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.4",
+    "sass": "^1.94.2",
     "tailwindcss": "^4"
   }
 }

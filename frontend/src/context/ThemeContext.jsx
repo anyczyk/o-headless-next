@@ -4,6 +4,7 @@ export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("light");
+    const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
     const toggleTheme = () => {
         setTheme(prev => (prev === "light" ? "dark" : "light"));
@@ -32,7 +33,7 @@ export const ThemeProvider = ({ children }) => {
     }, []);
 
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme, activeScrollDown }}>
+        <ThemeContext.Provider value={{ theme, toggleTheme, activeScrollDown, mobileMenuActive, setMobileMenuActive }}>
             {children}
         </ThemeContext.Provider>
     );
